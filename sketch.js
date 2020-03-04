@@ -86,13 +86,13 @@ function draw() {
 
   angle -= 0.01;
 
-  if (angle < -TWO_PI) {
+ 
     for (let j = 0; j < rows; j++) {
       for (let i = 0; i < cols; i++) {
         curves[j][i].reset();
       }
-    }
-    saveCanvas('lissajous.png');
+    
+   
     angle = 0;
     noLoop();
   }
